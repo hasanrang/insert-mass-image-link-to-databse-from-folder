@@ -1,4 +1,3 @@
-
 /*Fill with your info and run*/
 
 
@@ -7,22 +6,22 @@
 
 
 <?php
-$con=mysqli_connect("localhost","database_user","database_password","kdatabse_name");
+$con=mysqli_connect("localhost","database_user","database_password","databse_name");
 // Check connection
 if (mysqli_connect_errno())
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
+/*Database connection*/
 
 
-
-$filenames=glob("wallpaper/*.*"); /*image of files on this folder*/
+$filenames=glob("wallpaper/*.*"); /*upload or keep image or files on this folder*/
 $count=count($filenames); /*Count files number*/
 $i=0;
 $categoryString="popular"; /*files category on databse*/
-$totalView="0";
-$totalDownload="0";
-$currentRating="0";
+$totalView="0"; /*Dummy variable you may ignore*/
+$totalDownload="0"; /*Dummy variable you may ignore*/
+$currentRating="0"; /*Dummy variable you may ignore*/
 
 while($i<$count)
   {
